@@ -1,0 +1,102 @@
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*große Meta-Überschrift*/
+.meta {color:#041680;
+	font: bold 55px Verdana;
+	text-align: center;
+}
+
+/*kleinere Überschrift mit dem Namen*/	
+.headline {
+	color: #5eb7f7;
+	font: bold 40px Verdana;
+	text-align: center;
+}
+
+/*kleine Überschrift*/
+.h2 {
+	color: #0943c4;
+	font: bold 20px Verdana;
+	text-indent: 1em;
+}
+
+/*Was ist... */
+.p {
+	font: normal 15px Verdana;
+	padding-left: 2em;
+}
+
+/*Metadaten*/
+.data {
+	font: normal 15px Verdana;
+	line-height: 18pt;
+	padding-left: 0em;
+}
+
+/*Flexbox-Design bei "Geschichte"*/
+.history {
+  display: flex;
+	flex-wrap: nowrap;
+	}
+	
+.year {
+	border-right: solid 1px black;
+	flex-grow: 1;
+	margin: 5px;
+	padding: 10px;
+	flex: 1 1 150px;
+  font: normal 15px Verdana;
+	text-align: right;
+	}
+	
+.event {
+	border-left: solid 1px black;
+	flex-grow: 2;
+	margin: 5px;
+	padding: 10px;
+	flex: 2 1 400px;
+  font: normal 15px Verdana;
+	text-align: left;
+	}
+
+/*Bild*/
+.pic {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+img {
+	height: 150px;
+}
+
+/*Flexbox-Design bei "Beschreibung"*/
+.beschreibung {
+  display: flex;
+	flex-wrap: nowrap;
+	}
+	
+.text {
+	flex-grow: 1;
+	margin: 5px;
+	padding: 10px;
+	flex: 2 2 500px;
+  font: normal 15px Verdana;
+	text-align: center;
+	padding-left: 2em;
+	align-self: top;
+	}
+	
+.icon {
+	flex-grow: 2;
+	margin: 5px;
+	padding: 10px;
+	flex: 1 1 100px;
+  font: normal 15px Verdana;
+	text-align: center;
+	align-self: center;
+}
